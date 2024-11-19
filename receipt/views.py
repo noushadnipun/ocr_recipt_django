@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404, render, redirect
 from .forms import ReceiptForm
 from .models import Receipt
 
-from ocr_project.receipt.ocr.main import  process_receipt_image  # Adjust the import based on your OCR file structure
+from ocr_project.receipt.main import  process_receipt_image  # Adjust the import based on your OCR file structure
 #from ocr_project.receipt.ocr.main import pytesseract
 def upload_receipt(request):
     if request.method == 'POST':
